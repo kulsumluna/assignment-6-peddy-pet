@@ -124,15 +124,6 @@ const loadAllPets = async (category = '') => {
     
   };
 
-  
-  
-  
-  
- 
-// Event listener for the "Sort By Price" button
-document.getElementById("sort-btn").addEventListener("click", () => {
-  loadAllPets('', true); // Trigger sorting by price (descending order)
-});
 
   const loadVideoDetails = async(videoId) =>
     {
