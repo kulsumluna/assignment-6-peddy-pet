@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Animal</title>
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/d384ce09e0.js" crossorigin="anonymous"></script>
+
+    <style>
+        .lato-font 
+        {
+        font-family: "Lato", sans-serif;
+        }
+        .active-btn {
+        background-color:#72c2c7 ;
+        color: white;
+        border: 1 px solid #0E7A81;
+  }
+    </style>    
+
+</head>
+<body class="lato-font">
+    <header class="md:container mx-auto mt-4">
+        <nav class="flex justify-between items-center">
+            <div class="logo-container flex gap-2 items-center">
+                <img src="images/logo.webp" alt="">
+                <h2 class="text-3xl font-bold text-[#131313]">Peddy</h2>
+            </div>
+            <ul class="flex gap-7">
+                <li><a href="" class="text-gray-500">Home</a></li>
+                <li><a href="" class="text-gray-500">Shop</a></li>
+                <li><a href="" class="text-gray-500">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-regular fa-user border border-gray-400 rounded-full p-2.5"></i>
+            </div>
+        </nav>
+        <div class="banner my-6">
+            <div class="hero">
+                
+                    <div class="hero-content text-center">
+                      <div class="max-w-lg space-y-3">
+                        <p class="text-gray-500 text-lg font-bold">Bringing Families Together ❤️‍🔥</p>
+                        <h1 class="text-5xl font-extrabold leading-tight ">Your Path to Adoption Starts Here</h1>
+                        <p class="text-gray-500 max-w-2xl text-sm text-center">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                        </p>
+                        <button class="btn bg-[#0E7A81] text-white hover:bg-[#44b2ba]">View More</button>
+                        <img src="images/pet.webp" class="py-4" alt="">
+                      </div>
+                    </div>
+                  
+              </div>
+        </div>
+    </header>
+    <main class="md:container mx-auto">
+        <section class="mb-6">
+            <div class="adopt-info max-w-xl mx-auto text-center">
+                <h2 class="text-4xl font-extrabold">Adopt  Your  Best Friend</h2>
+                <p class="text-gray-500 text-sm mt-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+            <div class="categories my-7 grid grid-cols-2 md:grid-cols-4 justify-items-center gap-6" id="categories">
+                
+            </div>
+            <div class="flex justify-between items-center">
+                <h2 class="text-[#131313] font-bold text-2xl">Best Deal For You</h2>
+                <button id="sort-btn" class="btn bg-[#0E7A81] text-white hover:bg-[#44b2ba]">Sort By Prize</button>
+            </div>
+            <div class="flex my-7 gap-7">
+                <div class="w-3/4 border border-gray-300 p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-lg" id="pets-container">
+                  
+                </div>
+                <div class="border border-gray-300 p-3 w-[23%] rounded-lg grid grid-cols-2 gap-2 max-h-screen" id="liked">
+                </div>
+                
+            </div>
+
+        </section>
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn hidden" id="showModal" onclick="customModal.showModal()">open modal</button>
+        <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action flex justify-center">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-[#0E7A81] text-white">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>   
+</body>
+</html>
